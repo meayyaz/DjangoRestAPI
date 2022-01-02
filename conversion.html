@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<script>
+var formData = new FormData();
+formData.append("pixel", "a735f05f-c5ff-4a64-9b58-3c3d8d4db98d");
+formData.append("user", navigator.userAgent);
+formData.append("page", window.location.pathname);
+var request = new XMLHttpRequest();
+request.open("POST", "http://127.0.0.1:8000/pixels_post/");
+request.send(formData);
+</script>
+</head>
+
+<body>
+
+</body>
+</html>

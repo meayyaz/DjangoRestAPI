@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test pixel</title>
+
+<script>
+var formData = new FormData();
+formData.append("pixel", "17fdfd8a-05aa-44bf-b487-edeee29ec969");
+formData.append("user", navigator.userAgent);
+formData.append("page", window.location.pathname);
+var request = new XMLHttpRequest();
+request.open("POST", "http://127.0.0.1:8000/pixels_post/");
+request.send(formData);
+</script>
+</head>
+<body>
+
+</body>
+Hello Ayyaz
+</html>
